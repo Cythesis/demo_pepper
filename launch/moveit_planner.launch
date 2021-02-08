@@ -1,0 +1,20 @@
+<launch>
+	<arg name="robot_ip" default="192.168.1.21"/>
+	<arg name="network_interface" default="lo"/>
+
+	<!-- Robot Driver -->
+	<include file="$(find pepper_dcm_bringup)/launch/pepper_bringup.launch">
+		<arg name="robot_ip" default="$(arg robot_ip)"/>
+		<arg name="network_interface" default="$(arg network_interface)"/>
+	</include>
+
+	<!-- Sensors Driver -->
+	<include file="$(find naoqi_driver)/launch/naoqi_driver.launch">
+		<arg name="nao_ip" default="$(arg robot_ip)"/>
+		<arg name="network_interface" default="$(arg network_interface)"/>
+	</include>
+
+	<!-- Moveit Planner -->
+	<include file="$(find pepper_moveit_config)/launch/moveit_planner.launch"/>
+
+</launch>
