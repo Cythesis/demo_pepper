@@ -9,7 +9,7 @@ To run this package, make sure all Pepper ROS components and their dependencies 
 - https://github.com/ros-naoqi/pepper_robot (URDF + Model) 
 - https://github.com/ros-naoqi/pepper_virtual (Pepper gazebo simulation) 
 
-Set up guide can be found (here)<https://github.com/Cythesis/demo_pepper/wiki/Tutorial-A.1:-Pepper-ROS-Set-Up-Tutorial>
+Set up guide can be found <here>(https://github.com/Cythesis/demo_pepper/wiki)
 
 ## Quick Launch
 ```
